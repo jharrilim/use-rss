@@ -6,6 +6,12 @@
 
 React hook for RSS feeds.
 
+## Install
+
+```sh
+npm i @jharrilim/use-rss
+```
+
 ## Usage
 
 [![Edit use-rss-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/use-rss-demo-2eqdg?fontsize=14&hidenavigation=1&theme=dark)
@@ -16,7 +22,8 @@ import useRss from '@jharrilim/use-rss';
 
 export const MyApp = () => {
   const redditFeed = useRss('https://reddit.com/.rss');
-
+  if (redditFeed === null)
+    return <h1>Loading...</h1>;
   return (
     <div>
       <h1>{redditFeed?.title}</h1>
