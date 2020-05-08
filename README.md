@@ -4,6 +4,8 @@ React hook for RSS feeds.
 
 ## Usage
 
+[![Edit use-rss-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/use-rss-demo-2eqdg?fontsize=14&hidenavigation=1&theme=dark)
+
 ```tsx
 import React from 'react';
 import useRss from '@jharrilim/use-rss';
