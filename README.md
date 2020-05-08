@@ -1,5 +1,9 @@
 # useRss Hook
 
+![npm (scoped)](https://img.shields.io/npm/v/@jharrilim/use-rss?style=flat-square)
+![npm](https://img.shields.io/npm/dt/@jharrilim/use-rss?style=flat-square)
+![Node.js CI](https://github.com/jharrilim/use-rss/workflows/Node.js%20CI/badge.svg)
+
 React hook for RSS feeds.
 
 ## Usage
