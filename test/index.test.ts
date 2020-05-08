@@ -7,8 +7,5 @@ describe('Hook', () => {
     await waitForNextUpdate();
     expect(result.error).toBeUndefined();
     expect(result.current).toBeDefined();
-    expect(result.current!.title).toBeDefined();
-    expect(result.current!.description).toBeDefined();
-    expect(result.current!.items).toBeDefined();
   });
 })
