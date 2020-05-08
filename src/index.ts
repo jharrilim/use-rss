@@ -3,14 +3,14 @@ import RssParser from 'rss-parser';
 
 export const useRss = (url: string, opts?: RssParser.ParserOptions) => {
   const rss = new RssParser(opts);
-  const [r, s] = useState<RssParser.Output | null>(null);
+  const [rssOutput, setRssOutput] = useState<RssParser.Output | null>(null);
   useEffect(() => {
     rss.parseURL(url).then(output => {
-      s(output);
+      setRssOutput(output);
     });
   }, []);
 
-  return r;
+  return rssOutput;
 };
 
 export default useRss;
