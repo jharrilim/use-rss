@@ -1,0 +1,50 @@
+{
+  "name": "@jharrilim/use-rss",
+  "version": "0.1.0",
+  "description": "React hook for RSS Feeds",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --verbose",
+    "test:watch": "jest --verbose --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jharrilim/use-rss.git"
+  },
+  "author": "Joseph Harrison-Lim <josephharrisonlim@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "rss"
+  ],
+  "files": [
+    "/lib",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@types/jest": "^25.2.1",
+    "@types/react": "^16.9.34",
+    "jest": "^26.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^25.5.0",
+    "typedoc": "^0.17.6",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "rss-parser": "^3.8.0"
+  }
+}
